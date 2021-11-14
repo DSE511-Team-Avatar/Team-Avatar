@@ -5,21 +5,13 @@ import numpy as np
 import pandas as pd
 
 
-# In[2]:
-
-
 #Extract data from the file:
 data = pd.read_csv('Data/housing.csv')
 data.head()
 
 
-# In[3]:
-
-
 print('There are {} rows and {} columns in train'.format(data.shape[0],data.shape[1]))
 
-
-# In[4]:
 
 
 #Split the data first and do all feature transformations after the test_train splitting on the train set only to avoid data leakage
