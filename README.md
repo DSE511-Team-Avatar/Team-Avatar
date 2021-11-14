@@ -88,13 +88,3 @@ As most of us want to work in the industry sector once we finish our studies, th
 [4] Chaitali Majumder. [n. d.]. House price prediction using machine learning. Retrieved November 5, 2021 from https://nycdatascience.com/blog/studentworks/machine-learning/house-price-prediction-using-machine-learning-2/
 [5] Byeonghwa Park and Jae Kwon Bae. 2015. Using machine learning algorithms for housing price prediction: The case of Fairfax County, Virginia housing data. Expert Systems with Applications 42, 6 (2015), 2928–2934. https://doi.org/10.1016/j.eswa.2014.11.040
 [6] Subham Sarkar. September 6, 2019. Predicting House prices using classical machine learning and Deep Learning Techniques. Retrieved November 5, 2021 from https://medium.com/analytics-vidhya/predicting-house-prices-using-classical-machine-learning-and-deep-learning-techniques-ad4e55945e2d4
-
-## Importing the packages
-from __future__ import division, print_function, unicode_literals
-import numpy as np
-import pandas as pd
-import numpy.random as rnd
-import os
-%matplotlib inline
-import matplotlib
-import matplotlib.pyplot as plt
