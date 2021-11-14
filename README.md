@@ -1,5 +1,5 @@
 # Team-Avatar
-### Data Analysis with Python
+### DSE511: Introduction to Data Science and Computing
 
 This is a repo for DSE511 final project. We will be using the dataset for California Housing Prices: (https://www.kaggle.com/camnugent/california-housing-prices).
 
