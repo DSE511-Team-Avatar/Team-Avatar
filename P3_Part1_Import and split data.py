@@ -1,4 +1,8 @@
-# DSE511: Introduction to Data Science and Computing
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
 
 #Import the basic important libraries
 import numpy as np
@@ -30,3 +34,4 @@ train_set, test_set = train_test_split(data, test_size=0.2, random_state=1)
 
 print("Training Data", len(train_set))
 print("Testing Data", len(test_set))
+
