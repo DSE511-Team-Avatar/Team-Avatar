@@ -13,7 +13,7 @@ import pandas as pd
 
 
 #Extract data from the file:
-data = pd.read_csv('housing.csv')
+data = pd.read_csv('Data/housing.csv')
 data.head()
 
 
