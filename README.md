@@ -13,17 +13,40 @@ This is a repo for DSE511 project 3. We will be using the dataset for California
 
 ### Code and Data
 
+The working reposoitory for the project is given below:
 Dataset can be found in the data directory (will be updated soon): 
 
 ```
-.
-|____...
-| |____....
-| | |____....
-| |____..
-| |____....
-```
+├── README.md               <- The README.MD file introduces the project and repository
+├── Data
+│   ├── housing.csv         <- The original data (housing.csv) which will be processed in the python for further use. 
+│
+├── Documents
+│   ├── Team_Avatar.pdf     <- Preliminary description of the project
+│   └── Preliminary.pdf     <- The file that explains the division of project parts
+|   └── Finalreport.pdf     <- The final report with results and outputs 
+│
+├── Jupyter_Notebooks       <- Folder carrying Jupyter notebooks.
+│
+├── requirements.txt        <- Add a requirements.txt file that tracks library that are being used in the project.
+│               
+│
+├── src                     <- Source code used in this project
+│   │
+│   ├── Part1_data          <- Import and split data in trainning and testing set
+│   ├── Part1_eda           <- Scripts for explanatory data analysis.
+│   ├── Part2_preprocessing |---data_clean    <- Cleaning the data: work on NAN, null, missing values, etc
+|   |                       |---text_hand     <- Handling text and Categorical attributes 
+|   |                       |---Feat_scaling  <- Feature scaling and normalization  
+|   |                      
+│   └──Part3_modeling       |--- Models       <- linear regression, Randomforest, SVM, lasso/elastic net
+|   |                       |---Optimization  <- Hyperarameter tuning
+|   |                       |---Error_analysis <- Using cross validation and mean square error
+|   |                       |---Feat_extract   <- Find out importance of each attributes
+│
+└── main.py                 <- Script for running all codes to generate the result
 
+```
 ## Introduction
 
 The new computing technologies have widened the scope of machine learning to a great extent. It’s ability to learn from previous computations and independently adapt to new data is making it popular across various disciplines. Various sectors such as business, bioinformatic, computer engineering, pharmaceuticals, medical, climate change, and statistics are using machine learning models to gather knowledge and predict future events [5]. One of the important sectors that machine learning can be used is on real estates to predict the prices of houses. Buying a new house is always a big decision. It gets affected by various factors such as location, size of house, quality of house, future trading price, school zone etc but prioritizing these factors is tough [4]. What would be more important? Is it the location or quality of the house? Machine learning can be used to ease the process of decision making by forecasting the house prices with maximum accuracy of the market trend and the building model based on historic data set [6]. In this project we are trying to understand the factors contributing to housing prices in California. We hypothesis that the values of the houses will be directly related to the number of total rooms, the number of total bedrooms and median income. And inversely related to the housing median age. We will also be investigating how the price is affected by the location (longitude,
