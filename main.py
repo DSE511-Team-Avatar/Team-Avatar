@@ -1,13 +1,17 @@
-# DSE511: Introduction to Data Science and Computing
+# DSE511: Introduction to Data Science and Computing - Fall 2021
+# California Housing Prices (Final Project)
+# Team-Avatar
 
-#Import the basic important libraries
+# Importing libraries
 import numpy as np
 import pandas as pd
+import time
+import seaborn as sns
+import matplotlib.pyplot as plt
 
-
-#Extract data from the file:
+# Extract raw data from Data folder:
 data = pd.read_csv('Data/housing.csv')
-data.head()
+
 
 
 print('There are {} rows and {} columns in train'.format(data.shape[0],data.shape[1]))
