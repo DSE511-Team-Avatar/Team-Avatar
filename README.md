@@ -3,7 +3,7 @@
 ### California Housing Prices
 
 This is a repo for DSE511 project 3. We will be using the dataset for California Housing Prices: (https://www.kaggle.com/camnugent/california-housing-prices).
-
+To clone this repro: https://github.com/DSE511-Team-Avatar/Team-Avatar.git
 ### Team Members: 
 
 - Albina Jetybayeva
