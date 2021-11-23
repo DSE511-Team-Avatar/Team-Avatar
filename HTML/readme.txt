@@ -1,0 +1,1 @@
+This folder keeps the notebooks in HTML format.
