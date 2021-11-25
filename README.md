@@ -35,7 +35,7 @@ Dataset can be found in the data directory (will be updated soon):
 ├── src                     <- Source code used in this project
 │   │
 │   ├── Part1_data          <- Import and split data in trainning and testing set
-│   ├── Part1_eda           <- Scripts for explanatory data analysis.
+│   ├── Part1_eda           <- Scripts for exploratory data analysis.
 │   ├── Part2_preprocessing |---data_clean    <- Cleaning the data: work on NAN, null, missing values, etc
 |   |                       |---text_hand     <- Handling text and Categorical attributes 
 |   |                       |---Feat_scaling  <- Feature scaling and normalization  
