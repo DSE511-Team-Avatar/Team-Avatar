@@ -31,6 +31,7 @@ import warnings      #....> Prevent from printing the warning of plotting
 warnings.simplefilter(action="ignore", category=FutureWarning)
 #....................................................................................................
 print('Modules are imported')  #....> If prints, this means that the modules are imported correctly
+
 #****************************************************************************************************
 #****************************************************************************************************
 #                         ....> Read dataset <....
@@ -42,6 +43,10 @@ print("Dataframe number of columns: ", columns)
 
 #****************************************************************************************************
 #****************************************************************************************************
+#                         ....> Data pre-processing <....
+
+
+
 
 #Split the data first and do all feature transformations after the test_train splitting on the train set only to avoid data leakage
 train_set, test_set = train_test_split(df, test_size=0.2, random_state=1)
