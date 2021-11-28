@@ -3,7 +3,8 @@
 # Team-Avatar
 
 #*************************************************************************************************
-#....> Importing modules
+#*************************************************************************************************
+#                       ....> Importing modules <....
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -31,19 +32,16 @@ warnings.simplefilter(action="ignore", category=FutureWarning)
 #....................................................................................................
 print('Modules are imported')  #....> If prints, this means that the modules are imported correctly
 #****************************************************************************************************
-
-### Read in all our data
+#****************************************************************************************************
+#                         ....> Read dataset <....
 
 df = pd.read_csv('Data/housing.csv')  #....> Importing dataframe
 rows, columns = df.shape
 print("Dataframe number of rows: ", rows)
 print("Dataframe number of columns: ", columns)
 
-
-
-#print('There are {} rows and {} columns in train'.format(data.shape[0],data.shape[1]))
-
-
+#****************************************************************************************************
+#****************************************************************************************************
 
 #Split the data first and do all feature transformations after the test_train splitting on the train set only to avoid data leakage
 train_set, test_set = train_test_split(df, test_size=0.2, random_state=1)
