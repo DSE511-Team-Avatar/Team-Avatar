@@ -29,14 +29,13 @@ from sklearn import metrics
 import warnings      #....> Prevent from printing the warning of plotting
 warnings.simplefilter(action="ignore", category=FutureWarning)
 #....................................................................................................
-#....................................................................................................
 print('Modules are imported')  #....> If prints, this means that the modules are imported correctly
 #****************************************************************************************************
 
 ### Read in all our data
 
-data = pd.read_csv('Data/housing.csv')  #....> Importing dataframe
-rows,columns = df.shape
+df = pd.read_csv('Data/housing.csv')  #....> Importing dataframe
+rows, columns = df.shape
 print("Dataframe number of rows: ", rows)
 print("Dataframe number of columns: ", columns)
 
@@ -47,7 +46,7 @@ print("Dataframe number of columns: ", columns)
 
 
 #Split the data first and do all feature transformations after the test_train splitting on the train set only to avoid data leakage
-train_set, test_set = train_test_split(data, test_size=0.2, random_state=1)
+train_set, test_set = train_test_split(df, test_size=0.2, random_state=1)
 
 print("Training Data", len(train_set))
 print("Testing Data", len(test_set))
