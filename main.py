@@ -66,6 +66,16 @@ train_set, test_set = data_splitting(df)
 # Check for NaN
 #....> Check the train_set
 check_null(train_set)
-
 #....> Check the test_set
 check_null(test_set)
+
+
+# Check the Percentage of miising value
+#....> Check the train_set
+missing_percentage(train_set)
+#....> Check the test_set
+missing_percentage(test_set)
+
+
+# Data cleaning
+X1,X2 = data_cleaning(train_set, test_set)
