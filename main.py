@@ -49,6 +49,7 @@ from preprocessing import *
 #....> Show the structure
 show_structure(df)
 
+#....> Add some more features
 #....> Show new structure
 add_more_features(df)
 
