@@ -1,5 +1,5 @@
 import numpy as np
-
+import pandas as pd
 
 
 #....> Checking the data structure 
@@ -59,7 +59,7 @@ def missing_percentage(dataset):
     print(percent_missing)
     
 
-def data_cleaning(train_set, test_set):
+def data_cleaning(df,train_set, test_set):
     print('------------------------------------------------------------------------------------------------------------------------------')
     print('Replacing NAN with Imputer (median) using Scikit-learn\n')
     from sklearn.impute import SimpleImputer
@@ -74,4 +74,19 @@ def data_cleaning(train_set, test_set):
     imputer.fit(testing_numerical_attributes)  
     X2 = imputer.transform(testing_numerical_attributes)
     print("Both Training and Testing sets the NAN values are replaced with medain")
-    return X1, X2
+    #Put back the ocean proximity in train and test sets:
+    #....> Testing Set
+    train_set = pd.DataFrame(X1, columns = training_numerical_attributes.columns, index = training_numerical_attributes.index)
+    train_set.insert(9,"ocean_proximity",df["ocean_proximity"],True)
+    #....> Testing Set
+    test_set = pd.DataFrame(X2, columns = testing_numerical_attributes.columns, index = testing_numerical_attributes.index)
+    test_set.insert(9,"ocean_proximity",df["ocean_proximity"],True)
+    test_set  #....> Show the Testing set
+    print("\nocean proximity is inserted to train_set and test_set")
+    return train_set, test_set
+
+
+
+
+
+
