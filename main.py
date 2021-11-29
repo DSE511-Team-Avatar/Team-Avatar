@@ -80,9 +80,9 @@ missing_percentage(test_set)
 # Data cleaning 
 train_set, test_set = data_cleaning(df,train_set, test_set)
 
-
-
-
+# show_structure(df)
+show_structure(train_set)
+show_structure(test_set)
 
 
 
