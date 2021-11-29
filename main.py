@@ -44,8 +44,12 @@ print("Dataframe number of columns: ", columns)
 #****************************************************************************************************
 #****************************************************************************************************
 #                         ....> Data pre-processing <....
+from preprocessing import *
 
-
+#....> Show the structure
+show_structure(df)
+#....> Show new structure
+add_more_features(df)
 
 
 #Split the data first and do all feature transformations after the test_train splitting on the train set only to avoid data leakage
