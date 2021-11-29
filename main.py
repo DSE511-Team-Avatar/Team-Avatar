@@ -77,5 +77,14 @@ missing_percentage(train_set)
 missing_percentage(test_set)
 
 
-# Data cleaning
-X1,X2 = data_cleaning(train_set, test_set)
+# Data cleaning 
+train_set, test_set = data_cleaning(df,train_set, test_set)
+
+
+
+
+
+
+
+
+
