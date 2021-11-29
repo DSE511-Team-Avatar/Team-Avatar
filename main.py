@@ -15,7 +15,7 @@ import time
 #....> AI/ML modules
 from sklearn.preprocessing import LabelEncoder
 from sklearn.impute import SimpleImputer
-from sklearn.model_selection import train_test_split
+#from sklearn.model_selection import train_test_split
 
 from sklearn import linear_model
 from sklearn.tree import DecisionTreeRegressor
@@ -44,18 +44,28 @@ print("Dataframe number of columns: ", columns)
 #****************************************************************************************************
 #****************************************************************************************************
 #                         ....> Data pre-processing <....
+
+#....> Import pre-processing module
 from preprocessing import *
+
 
 #....> Show the structure
 show_structure(df)
 
 #....> Add some more features
-add_more_features(df)
+df = adding_additional_features(df)
 show_structure(df)
 
 #...> Handling categorical feature(ocean_proximity)
-handling_categorical(df)
+df = handling_categorical_attributes(df)
 show_structure(df)
 
-splitting_dataset(df)
+#....> Data Splitting
+train_set, test_set = data_splitting(df)
 
+# Check for NaN
+#....> Check the train_set
+check_null(train_set)
+
+#....> Check the test_set
+check_null(test_set)
