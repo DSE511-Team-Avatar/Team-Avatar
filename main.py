@@ -50,11 +50,12 @@ from preprocessing import *
 show_structure(df)
 
 #....> Add some more features
-#....> Show new structure
 add_more_features(df)
-
-#...> Handling categorical feature(ocean_proximity)
-Handling_categorical(df)
 show_structure(df)
 
+#...> Handling categorical feature(ocean_proximity)
+handling_categorical(df)
+show_structure(df)
+
+splitting_dataset(df)
 
