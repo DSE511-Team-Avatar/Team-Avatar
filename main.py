@@ -48,12 +48,12 @@ from preprocessing import *
 
 #....> Show the structure
 show_structure(df)
+
 #....> Show new structure
 add_more_features(df)
 
+#...> Handling categorical feature(ocean_proximity)
+Handling_categorical(df)
+show_structure(df)
 
-#Split the data first and do all feature transformations after the test_train splitting on the train set only to avoid data leakage
-train_set, test_set = train_test_split(df, test_size=0.2, random_state=1)
 
-print("Training Data", len(train_set))
-print("Testing Data", len(test_set))
