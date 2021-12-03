@@ -86,7 +86,6 @@ def data_cleaning(df,train_set, test_set):
     return train_set, test_set
 
 
-
-
-
+    
+    
 
