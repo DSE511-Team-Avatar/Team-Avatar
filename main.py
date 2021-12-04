@@ -3,34 +3,22 @@
 # Team-Avatar
 
 #*************************************************************************************************
-#*************************************************************************************************
-#                       ....> Importing modules <....
+#                                 Importing basic modules
+# ************************************************************************************************                      
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-import time
-
-
-#....> AI/ML modules
-from sklearn.preprocessing import LabelEncoder
-from sklearn.impute import SimpleImputer
-#from sklearn.model_selection import train_test_split
-
-from sklearn import linear_model
-from sklearn.tree import DecisionTreeRegressor
-
-from sklearn.metrics import mean_absolute_error
-from sklearn.metrics import mean_squared_error 
-from sklearn.model_selection import GridSearchCV
-from sklearn import metrics
-
 
 #....> Preventing warnings
 import warnings      #....> Prevent from printing the warning of plotting
 warnings.simplefilter(action="ignore", category=FutureWarning)
-#....................................................................................................
-print('Modules are imported')  #....> If prints, this means that the modules are imported correctly
+
+print('Modules in main.py are imported\n') #....> If prints, this means that the modules in main.py are imported correctly
+
+
+
+
 
 #****************************************************************************************************
 #****************************************************************************************************
