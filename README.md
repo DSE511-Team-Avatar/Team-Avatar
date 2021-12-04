@@ -54,7 +54,7 @@ In this project we are trying to understand the factors contributing to housing 
 
 ## Data
 
-For our investigation we used the dataset for California Housing Prices, which contains information on houses from the 1990 California census [7]. Although the information from this dataset was old, it was helpful to learn the regression techniques. Moreover, another reason why this data was chosen was because it had an understandable list of variables and the optimal size for ML practice. The raw dataset was not cleaned and it consisted of 20641 rows and 10 columns. 
+For our investigation we used the dataset for California Housing Prices, which contains information on houses from the 1990 California census [1]. Although the information from this dataset was old, it was helpful to learn the regression techniques. Moreover, another reason why this data was chosen was because it had an understandable list of variables and the optimal size for ML practice. The raw dataset was not cleaned and it consisted of 20641 rows and 10 columns. 
 
 Longitude - A measure of how far west a house is; a higher value is farther west
 Latitude - A measure of how far north a house is; a higher value is farther north
