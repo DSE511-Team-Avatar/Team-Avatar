@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Preprocessing
-"""
+# DSE511: Introduction to Data Science and Computing - Fall 2021
+# California Housing Prices (Preprocessing)
+# Team-Avatar
+
 #....> Basic modules
 import numpy as np
 import pandas as pd
@@ -10,12 +10,10 @@ import pandas as pd
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
 
-
-
-
+#******************************************************************************************************************************************
 def preprocessing(df):
     #print("Reading the dataframe...\n")
-    #df = pd.read_csv('Data/housing.csv') 
+    #df = pd.read_csv('../Data/housing.csv') 
     print("checking shape of data\n")
     rows,columns = df.shape 
     print("Dataframe number of rows: ", rows) 
@@ -143,7 +141,7 @@ def preprocessing(df):
     housing_labels_t = test["median_house_value"].copy()
     
     print("Congratulations!\n")
-    print("Now, you can fir your models on the dataset:\n")
+    print("Now, you can fit the models to the dataset:\n")
     print("Notice:\n")
     print("X_train = housing\n")
     print("y_train = housing_labels\n")
