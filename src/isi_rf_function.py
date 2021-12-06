@@ -78,7 +78,7 @@ def isi_random_forest(housing, housing_labels,housing_t, housing_labels_t):
     # Using cross_val_score with MSE for the data.
     neg_scores=cross_val_score(final_model,housing, housing_labels,scoring="neg_mean_squared_error", cv=10)
     # Because I was only able to get the negative values using the options above, I added a -.
-    final_scores_MSE=(-(neg_scores))
+    final_scores_MSE=np.sqrt(-(neg_scores))
     print("Cross Validation Score.")
     print("scores: ", final_scores_MSE)
     print("scores mean: ", final_scores_MSE.mean())
