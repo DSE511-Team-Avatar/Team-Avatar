@@ -41,6 +41,6 @@ housing, housing_labels, housing_t, housing_labels_t = preprocessing(df_Capped)
 
     
 #****************************************************************************************************
-#                                Data pre-processing 
+#                             Try our Functions (models)
 #****************************************************************************************************
 
