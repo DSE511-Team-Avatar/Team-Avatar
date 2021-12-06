@@ -2,6 +2,7 @@
 # California Housing Prices (Final Project)
 # Team-Avatar
 
+
 #*************************************************************************************************
 #                                 Importing basic modules
 # ************************************************************************************************                      
@@ -17,11 +18,17 @@ warnings.simplefilter(action="ignore", category=FutureWarning)
 
 print('Modules in main.py are imported\n') #....> If prints, this means that the modules in main.py are imported correctly
 
+
 #****************************************************************************************************
 #                                 Insert dataframe
 #****************************************************************************************************
-
 df = pd.read_csv('../Data/housing.csv')  #....> Importing dataframe
+
+#****** Notice:
+# ...> Use the following dataframe for Capped
+df_Capped = df
+# ...> Use the following dataframe for No Capped
+df_NoCapped = df[df['median_house_value'] < 490000]
 
 
 #****************************************************************************************************
@@ -30,7 +37,7 @@ df = pd.read_csv('../Data/housing.csv')  #....> Importing dataframe
 #....> Import pre-processing module
 from preprocessing import *
 
-housing, housing_labels, housing_t, housing_labels_t = preprocessing(df)
+housing, housing_labels, housing_t, housing_labels_t = preprocessing(df_Capped)
 
     
 #****************************************************************************************************
