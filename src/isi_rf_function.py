@@ -13,6 +13,11 @@ def isi_random_forest(housing, housing_labels,housing_t, housing_labels_t):
     # Importing necessary tools for plotting.
     import matplotlib.pyplot as plt
     from matplotlib.pyplot import figure
+    import numpy as np
+    import pandas as pd
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    import matplotlib as mpl
     
     # Using random forest regressor.
     rf=RandomForestRegressor()
