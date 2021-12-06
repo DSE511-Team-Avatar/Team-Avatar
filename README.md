@@ -62,22 +62,22 @@ We will be using the dataset for California Housing Prices: (https://www.kaggle.
 The data is chosen because it has an understandable list of variables and the optimal size between too small and big. The data contains information on houses from the 1990 California census. The data is not cleaned. Although data is old, it can help to learn the regression techniques. The samples are given as
 20641 rows and 10 columns of raw data.
 
-Longitude - A measure of how far west a house is; a higher value is farther west
-Latitude - A measure of how far north a house is; a higher value is farther north
-housing_median_age - Median age of a house within a block; a lower number is a newer building
-total_rooms - Total number of rooms within a block
-total_bedrooms - Total number of bedrooms within a block
-population - Total number of people residing within a block
-households - Total number of households, a group of people residing within a home unit, for a block
-median_income - Median income for households within a block of houses (measured in tens of thousands of US Dollars)
-median_house_value - Median house value for households within a block (measured in US Dollars)
-ocean_proximity - Location of the house w.r.t ocean/sea
+- Longitude - A measure of how far west a house is; a higher value is farther west
+- Latitude - A measure of how far north a house is; a higher value is farther north
+- housing_median_age - Median age of a house within a block; a lower number is a newer building
+- total_rooms - Total number of rooms within a block
+- total_bedrooms - Total number of bedrooms within a block
+- population - Total number of people residing within a block
+- households - Total number of households, a group of people residing within a home unit, for a block
+- median_income - Median income for households within a block of houses (measured in tens of thousands of US Dollars)
+- median_house_value - Median house value for households within a block (measured in US Dollars)
+- ocean_proximity - Location of the house w.r.t ocean/sea
 
 All data is numerical, with the exception of ocean_ proximity, which has string input like (“near bay”, “near” ocean”, “inland”, etc.).
 
 ## Methods 
 
-In this project, we solved a machine learning problem. We had a supervised problem, because we used the house values as labels. The technique that we used to analyze the data was regression. The  process started by doing exploratory data analysis. After the data was loaded, the exploratory data analysis consisted of observing how the features were related. Some examples of tools used for exploratory data analysis were scatter plots, bar plots, etc. These observations drove us to add additional features that were relevant to our problem. The added features were rooms_per_household, bedrooms_per_room and population_per_household. Then, we did the preprocessing of the data, which included handling categorical attributes, dividing the data into testing and training datasets, cleaning and feature scaling the data and separating the target values (median house income). The next step was modeling. The models chosen for this part were Decision Tree, Linear Regression (along with Lasso, Ridge and Elastic Net), Random Forest Regression and SVR. We used the tools available with scikit-learn to fit the data. We used the fit method for each model after creating objects. Then, we evaluated the model’s performance by using the predict method on the test set. Then, we did error evaluation, by using mean squared error (MSE) and taking the square root to obtain the root mean squared error (RMSE). We also used the Mean Absolute Error (MAE) and cross_val_score, scores(where applicable), and wall times(checked in juoyter notebooks for training and predicting). These tools helped us determine how successful the models were and to adjust accordingly. We optimized our model using hyperparameters tuning using “GridSearchCV” from scikit-learn. Finally, we observed and analyzed the importance of each feature using either coefficients of the models (LR, Lasso, Ridge, Elastic Net) or “.feature_importances_” for Random Forest and Decision Tree. The modeling was also tested on two different datasets: “Capped” and “NoCapped”. The capped dataset contained all prices from the original file, while the NoCapped dataset removed the values of prices >$490,000. 
+In this project, we solved a machine learning problem. We had a supervised problem, because we used the house values as labels. The technique that we used to analyze the data was regression. The  process started by doing exploratory data analysis. After the data was loaded, the exploratory data analysis consisted of observing how the features were related. Some examples of tools used for exploratory data analysis were scatter plots, bar plots, etc. These observations drove us to add additional features that were relevant to our problem. The added features were rooms_per_household, bedrooms_per_room and population_per_household. Then, we did the preprocessing of the data, which included handling categorical attributes, dividing the data into testing and training datasets, cleaning and feature scaling the data and separating the target values (median house income). The next step was modeling. The models chosen for this part were Decision Tree, Linear Regression (along with Lasso, Ridge and Elastic Net), Random Forest Regression and SVR. We used the tools available with scikit-learn to fit the data. We used the fit method for each model after creating objects. Then, we evaluated the model’s performance by using the predict method on the test set. Then, we did error evaluation, by using mean squared error (MSE) and taking the square root to obtain the root mean squared error (RMSE). We also used the Mean Absolute Error (MAE) and cross_val_score, scores(where applicable), and wall times(checked in jupyter notebooks for training and predicting). These tools helped us determine how successful the models were and to adjust accordingly. We optimized our model using hyperparameters tuning using “GridSearchCV” from scikit-learn. Finally, we observed and analyzed the importance of each feature using either coefficients of the models (LR, Lasso, Ridge, Elastic Net) or “.feature_importances_” for Random Forest and Decision Tree. The modeling was also tested on two different datasets: “Capped” and “NoCapped”. The capped dataset contained all prices from the original file, while the NoCapped dataset removed the values of prices >$490,000. 
 
 ## Conclusion
 
