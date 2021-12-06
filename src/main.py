@@ -45,24 +45,24 @@ housing, housing_labels, housing_t, housing_labels_t = preprocessing(df_Capped)
 #                             Try our Functions (models)
 #****************************************************************************************************
 
-# To call Linear Regression uncomment these two lines
+#....> To call Linear Regression uncomment these two lines
 #from only_function_linreg_Albina import *
 #linreg_Albina(housing, housing_labels, housing_t, housing_labels_t)
 
 
-#To call Lasso uncomment these two lines:
+#....> To call Lasso uncomment these two lines:
 #from only_function_lasso_Albina import *
 #lasso_Albina(housing, housing_labels, housing_t, housing_labels_t)
 
-#To call Ridge uncomment these two lines:
+#....> To call Ridge uncomment these two lines:
 #from only_function_ridge_Albina import *
 #ridge_Albina(housing, housing_labels, housing_t, housing_labels_t)
 
-#To call ElasticNet uncomment these two lines:
+#....> To call ElasticNet uncomment these two lines:
 #from only_function_elasticnet_Albina import *
 #elasticnet_Albina(housing, housing_labels, housing_t, housing_labels_t)
 
-#To call Random Forest uncomment these two lines:
+#....> To call Random Forest uncomment these two lines:
 #from isi_rf_function import *
 #isi_random_forest(housing, housing_labels, housing_t, housing_labels_t)
 
