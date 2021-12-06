@@ -13,7 +13,11 @@ def linreg_Albina(housing, housing_labels, housing_t, housing_labels_t):
     from sklearn.model_selection import cross_val_score
     from sklearn.metrics import r2_score
     from matplotlib.pyplot import figure
-    
+    import numpy as np
+    import pandas as pd
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+    import matplotlib as mpl
     #%%time
     #Model Linear Regression
     print("Linear Regression")
