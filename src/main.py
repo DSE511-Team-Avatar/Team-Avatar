@@ -23,11 +23,9 @@ print('Modules in main.py are imported\n') #....> If prints, this means that the
 #                                 Insert dataframe
 #****************************************************************************************************
 df = pd.read_csv('../Data/housing.csv')  #....> Importing dataframe
-
-#****** Notice:
-# ...> Use the following dataframe for Capped
+# ...> For Capped
 df_Capped = df
-# ...> Use the following dataframe for No Capped
+# ...> For No Capped
 df_NoCapped = df[df['median_house_value'] < 490000]
 
 
@@ -37,6 +35,9 @@ df_NoCapped = df[df['median_house_value'] < 490000]
 #....> Import pre-processing module
 from preprocessing import *
 
+#****** Notice:
+# ...> For Capped use:      df_Capped
+# ...> For No Capped use:   df_NoCapped
 housing, housing_labels, housing_t, housing_labels_t = preprocessing(df_Capped)
 
     
