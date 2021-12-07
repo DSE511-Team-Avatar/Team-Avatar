@@ -75,7 +75,8 @@ housing, housing_labels, housing_t, housing_labels_t = preprocessing(df_Capped)
 #ehsan_dtr(housing, housing_labels, housing_t, housing_labels_t)
 
 
-#....> To call Support Vector Regression uncomment these two lines:
+
+#....> To call Support Vector Regression uncomment these two lines:  (will be updated soon)
 #from pragya_svr import *
 #pragya_svr(housing, housing_labels, housing_t, housing_labels_t)
 
