@@ -1,8 +1,8 @@
 # Team-Avatar
-### DSE511: Introduction to Data Science and Computing. 
-### California Housing Prices
+### DSE511: Introduction to Data Science and Computing (I)
+### Final Project: California Housing Prices
 
-This is a repo for DSE511 project 3. We will be using the dataset for California Housing Prices: (https://www.kaggle.com/camnugent/california-housing-prices).
+This is a repo for DSE511 final project. We will be using the dataset for California Housing Prices: (https://www.kaggle.com/camnugent/california-housing-prices).
 
 #### To clone this repro: https://github.com/DSE511-Team-Avatar/Team-Avatar.git
 ### Team Members: 
@@ -15,7 +15,7 @@ This is a repo for DSE511 project 3. We will be using the dataset for California
 ### Code and Data
 
 
-The Dataset can be found in the data directory (housing.csv)
+The Dataset can be found in the Data directory (housing.csv)
 
 To operate our code it is neccessary to use main branch and run the main.py file. Inside it, the two datasets can be used: capped prices (df_Capped) and without capped prices (df_NoCapped). Seven different models can be run on these datasets (Linear Regression, Lasso, Ridge, ElasticNet, Random Forest, Decision Tree, SVR). The details on methods are in the "Methods" section below.
 
@@ -29,7 +29,7 @@ The working reposoitory for the project is given below:
 ├── Documents
 |   └── Preliminary.pdf     <- The file that explains the division of project parts
 │   └── Team_Avatar.pdf     <- Preliminary description of the project
-|   └── Finalreport.pdf     <- The final report with results and outputs 
+|   └── Finalreport.pdf     <- The final report with results and outputs (will be added soon) 
 │
 ├── Jupyter_Notebooks       <- Folder carrying Jupyter notebooks
 │
@@ -42,14 +42,18 @@ The working reposoitory for the project is given below:
 │   ├── preprocessing.py    <- Preprocessing and data cleaning
 |   |                                       
 |   |                      
-│   ├── (models)            <- linear regression, Randomforest, SVM, lasso/elastic net
-|   |                       |---Optimization  <- Hyperarameter tuning
-|   |                       |---Error_analysis <- Using cross validation and mean square error
+│   ├── (models: must be called inside main.py)    <- only_function_linreg_Albina.py
+|                                                  <- only_function_lasso_Albina.py
+|                                                  <- only_function_ridge_Albina.py
+|                                                  <- only_function_elasticnet_Albina.py
+|                                                  <- isi_rf_function.py
+|                                                  <- ehsan_dtr.py
+|                                                  <- pragya_svr.py  (will be added soon)
 |
 | 
 ├── README.md               <- The README.MD file introduces the project and repository
 |
-├── requirements.txt        <- Add a requirements.txt file that tracks library that are being used in the project.
+├── requirements.txt        <- Add a requirements.txt file that tracks library that are being used in the project
 
 ```
 ## Introduction
@@ -62,22 +66,24 @@ We will be using the dataset for California Housing Prices: (https://www.kaggle.
 The data is chosen because it has an understandable list of variables and the optimal size between too small and big. The data contains information on houses from the 1990 California census. The data is not cleaned. Although data is old, it can help to learn the regression techniques. The samples are given as
 20641 rows and 10 columns of raw data.
 
-- Longitude - A measure of how far west a house is; a higher value is farther west
-- Latitude - A measure of how far north a house is; a higher value is farther north
-- housing_median_age - Median age of a house within a block; a lower number is a newer building
-- total_rooms - Total number of rooms within a block
-- total_bedrooms - Total number of bedrooms within a block
-- population - Total number of people residing within a block
-- households - Total number of households, a group of people residing within a home unit, for a block
-- median_income - Median income for households within a block of houses (measured in tens of thousands of US Dollars)
-- median_house_value - Median house value for households within a block (measured in US Dollars)
-- ocean_proximity - Location of the house w.r.t ocean/sea
+- Longitude: A measure of how far west a house is; a higher value is farther west
+- Latitude: A measure of how far north a house is; a higher value is farther north
+- housing_median_age: Median age of a house within a block; a lower number is a newer building
+- total_rooms: Total number of rooms within a block
+- total_bedrooms: Total number of bedrooms within a block
+- population: Total number of people residing within a block
+- households: Total number of households, a group of people residing within a home unit, for a block
+- median_income: Median income for households within a block of houses (measured in tens of thousands of US Dollars)
+- median_house_value: Median house value for households within a block (measured in US Dollars)
+- ocean_proximity: Location of the house w.r.t ocean/sea
 
 All data is numerical, with the exception of ocean_ proximity, which has string input like (“near bay”, “near” ocean”, “inland”, etc.).
+
 
 ## Methods 
 
 In this project, we solved a machine learning problem. We had a supervised problem, because we used the house values as labels. The technique that we used to analyze the data was regression. The  process started by doing exploratory data analysis. After the data was loaded, the exploratory data analysis consisted of observing how the features were related. Some examples of tools used for exploratory data analysis were scatter plots, bar plots, etc. These observations drove us to add additional features that were relevant to our problem. The added features were rooms_per_household, bedrooms_per_room and population_per_household. Then, we did the preprocessing of the data, which included handling categorical attributes, dividing the data into testing and training datasets, cleaning and feature scaling the data and separating the target values (median house income). The next step was modeling. The models chosen for this part were Decision Tree, Linear Regression (along with Lasso, Ridge and Elastic Net), Random Forest Regression and SVR. We used the tools available with scikit-learn to fit the data. We used the fit method for each model after creating objects. Then, we evaluated the model’s performance by using the predict method on the test set. Then, we did error evaluation, by using mean squared error (MSE) and taking the square root to obtain the root mean squared error (RMSE). We also used the Mean Absolute Error (MAE) and cross_val_score, scores(where applicable), and wall times(checked in jupyter notebooks for training and predicting). These tools helped us determine how successful the models were and to adjust accordingly. We optimized our model using hyperparameters tuning using “GridSearchCV” from scikit-learn. Finally, we observed and analyzed the importance of each feature using either coefficients of the models (LR, Lasso, Ridge, Elastic Net) or “.feature_importances_” for Random Forest and Decision Tree. The modeling was also tested on two different datasets: “Capped” and “NoCapped”. The capped dataset contained all prices from the original file, while the NoCapped dataset removed the values of prices >$490,000. 
+
 
 ## Conclusion
 
