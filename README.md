@@ -22,34 +22,34 @@ To operate our code it is neccessary to use main branch and run the main.py file
 The working reposoitory for the project is given below:
 
 ```
-├── README.md               <- The README.MD file introduces the project and repository
+|
 ├── Data
-│   ├── housing.csv         <- The original data (housing.csv) which will be processed in the python for further use. 
+│   ├── housing.csv         <- The original data (housing.csv) which will be processed in the python for further use
 │
 ├── Documents
-│   ├── Team_Avatar.pdf     <- Preliminary description of the project
-│   └── Preliminary.pdf     <- The file that explains the division of project parts
+|   └── Preliminary.pdf     <- The file that explains the division of project parts
+│   └── Team_Avatar.pdf     <- Preliminary description of the project
 |   └── Finalreport.pdf     <- The final report with results and outputs 
 │
-├── Jupyter_Notebooks       <- Folder carrying Jupyter notebooks.
+├── Jupyter_Notebooks       <- Folder carrying Jupyter notebooks
 │
-├── requirements.txt        <- Add a requirements.txt file that tracks library that are being used in the project.
 │               
 │
-├── src                     <- Source code used in this project
+├── src                     <- Source code (.py) used in this project
 │   │
-│   ├── Part1_data          <- Import and split data in trainning and testing set
-│   ├── Part1_eda           <- Scripts for exploratory data analysis.
-│   ├── Part2_preprocessing |---data_clean    <- Cleaning the data: work on NAN, null, missing values, etc
-|   |                       |---text_hand     <- Handling text and Categorical attributes 
-|   |                       |---Feat_scaling  <- Feature scaling and normalization  
+│   ├── main.py             <- Script for running all codes to generate the result
+│   |          
+│   ├── preprocessing.py    <- Preprocessing and data cleaning
+|   |                                       
 |   |                      
-│   └──Part3_modeling       |--- Models       <- linear regression, Randomforest, SVM, lasso/elastic net
+│   ├── (models)            <- linear regression, Randomforest, SVM, lasso/elastic net
 |   |                       |---Optimization  <- Hyperarameter tuning
 |   |                       |---Error_analysis <- Using cross validation and mean square error
-|   |                       |---Feat_extract   <- Find out importance of each attributes
-│
-└── main.py                 <- Script for running all codes to generate the result
+|
+| 
+├── README.md               <- The README.MD file introduces the project and repository
+|
+├── requirements.txt        <- Add a requirements.txt file that tracks library that are being used in the project.
 
 ```
 ## Introduction
