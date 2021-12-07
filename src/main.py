@@ -54,16 +54,22 @@ housing, housing_labels, housing_t, housing_labels_t = preprocessing(df_Capped)
 #from only_function_lasso_Albina import *
 #lasso_Albina(housing, housing_labels, housing_t, housing_labels_t)
 
+
 #....> To call Ridge uncomment these two lines:
 #from only_function_ridge_Albina import *
 #ridge_Albina(housing, housing_labels, housing_t, housing_labels_t)
 
+
 #....> To call ElasticNet uncomment these two lines:
 #from only_function_elasticnet_Albina import *
 #elasticnet_Albina(housing, housing_labels, housing_t, housing_labels_t)
+
 
 #....> To call Random Forest uncomment these two lines:
 #from isi_rf_function import *
 #isi_random_forest(housing, housing_labels, housing_t, housing_labels_t)
 
 
+#....> To call Decision Tree Regressor uncomment these two lines:
+#from ehsan_dtr import *
+#ehsan_dtr(housing, housing_labels, housing_t, housing_labels_t)
