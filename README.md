@@ -31,7 +31,7 @@ The working reposoitory for the project is given below:
 │   └── Team_Avatar.pdf     <- Preliminary description of the project
 |   └── Finalreport.pdf     <- The final report with results and outputs (will be added soon) 
 │
-├── Jupyter_Notebooks       <- Folder carrying Jupyter notebooks
+├── Jupyter_Notebooks       <- Folder carrying Jupyter notebooks (including Part1. Explanatory Data Analysis with graphs)
 │
 │               
 │
