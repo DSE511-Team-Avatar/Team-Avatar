@@ -73,3 +73,9 @@ housing, housing_labels, housing_t, housing_labels_t = preprocessing(df_Capped)
 #....> To call Decision Tree Regressor uncomment these two lines:
 #from ehsan_dtr import *
 #ehsan_dtr(housing, housing_labels, housing_t, housing_labels_t)
+
+
+#....> To call Support Vector Regression uncomment these two lines:
+#from pragya_svr import *
+#pragya_svr(housing, housing_labels, housing_t, housing_labels_t)
+
