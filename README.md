@@ -29,7 +29,8 @@ The working reposoitory for the project is given below:
 ├── Documents
 |   └── Preliminary.pdf     <- The file that explains the division of project parts
 │   └── Team_Avatar.pdf     <- Preliminary description of the project
-|   └── Finalreport.pdf     <- The final report with results and outputs (will be added soon) 
+|   └── Final_report.pdf    <- The final report with results and outputs 
+|   └── Final_ppt.pdf       <- The final presentation for this project with the highlights of the results
 │
 ├── Jupyter_Notebooks       <- Folder carrying Jupyter notebooks (including Explanatory Data Analysis (EDA) file "Albina_Part1_EDA")
 │
