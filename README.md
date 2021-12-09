@@ -49,7 +49,7 @@ The working reposoitory for the project is given below:
 |                                                  <- only_function_elasticnet_Albina.py
 |                                                  <- isi_rf_function.py
 |                                                  <- ehsan_dtr.py
-|                                                  <- pragya_svr.py  (will be added soon)
+|                                                  <- pragya_svr.py
 |
 | 
 ├── README.md               <- The README.MD file introduces the project and repository
